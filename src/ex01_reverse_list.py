@@ -13,4 +13,7 @@ def reverse_list(values: list[int]) -> list[int]:
     - reverse_list([1, 2, 3]) -> [3, 2, 1]
     - reverse_list([]) -> []
     """
+    l2= values.copy() #Crea una copia de la lista original
+    return l2[::-1]
+    #return values.reverse() or return values [::-1]. Puedo usar cualquiera de las dos formas. Hacen lo mismo
     raise NotImplementedError("Implementa reverse_list(values)")

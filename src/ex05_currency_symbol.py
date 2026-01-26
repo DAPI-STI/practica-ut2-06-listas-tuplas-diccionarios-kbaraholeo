@@ -11,4 +11,12 @@ def currency_symbol(currency: str) -> str | None:
 
     - No lanza error si la divisa no está.
     """
+    if currency == "Euro" or currency == "euro" or currency == '€':
+        return "€"
+    elif currency == "Dollar" or currency == "dollar" or currency == '$':
+        return "$"
+    elif currency == "Yen" or currency == "yen" or currency == '¥':
+        return "¥"
+    else:
+        return None
     raise NotImplementedError("Implementa currency_symbol(currency)")
